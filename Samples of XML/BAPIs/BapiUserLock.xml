@@ -1,0 +1,4 @@
+<!-- Business object USER, method LOCK for lock user implemented by RFC BAPI_USER_UNLOCK -->
+<LOCK xmlns="http://Microsoft.LobServices.Sap/2007/03/Bapi/BUS2017/">
+  <USERNAME>SAP-USERNAME</USERNAME>
+</LOCK>
