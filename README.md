@@ -1,4 +1,4 @@
-# SAP on Azure | LogicApps | PowerApps | PowerAutomate | Azure Platform | ABAP - Examples 
+# SAP on Azure | LogicApps | PowerApps | PowerAutomate | Azure Platform | Sentinel | Synapse/ADF | ABAP - Examples 
 This repository contains samples for SAP integration with Azure Logic App | PowerApps | PowerAutomate | Power Tools on Azure with examples/demos
 These example scripts and XML can be leveraged for your SAP Projects. There are subfolders for each type of Power platform & integration platform. 
 Including Code Examples used by the Quickstarts in the SAP and Azure Documentation.
