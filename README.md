@@ -4,6 +4,7 @@ These example scripts and XML can be leveraged for your SAP Projects. There are 
 Including Code Examples used by the Quickstarts in the SAP and Azure Documentation.
 Azure Data Factory Connector list
 
-Anyone is welcome to submit additional samples relevaent to SAP on Azure topic. Preferrably explain what the sample details.
+Anyone is welcome to submit additional samples specific to SAP on Azure topic. 
+Preferrably explain what the sample details.
 
 <B>Note - Do not include any PII (Personally Identifiable Information, e.g. e-mails, contact) in the samples text.</B>
