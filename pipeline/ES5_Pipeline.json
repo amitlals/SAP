@@ -1,0 +1,104 @@
+{
+	"name": "ES5_Pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "ES5_CopyData",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ODataSource",
+						"httpRequestTimeout": "00:05:00"
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ES5_OData_Dataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"EntityName": "SEPMRA_C_SalesOrder"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ES5_DataLake",
+						"type": "DatasetReference",
+						"parameters": {
+							"Path": "SEPMRA_C_SalesOrder"
+						}
+					}
+				]
+			},
+			{
+				"name": "ES5_CopyData_Cust",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ODataSource",
+						"httpRequestTimeout": "00:05:00"
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ES5_OData_Dataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"EntityName": "SEPMRA_C_SalesOrderCustomer"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ES5_DataLake",
+						"type": "DatasetReference",
+						"parameters": {
+							"Path": "SEPMRA_C_SalesOrderCustomer"
+						}
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-04-14T00:58:15Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

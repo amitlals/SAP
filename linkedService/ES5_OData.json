@@ -1,0 +1,24 @@
+{
+	"name": "ES5_OData",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "OData",
+		"typeProperties": {
+			"url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/SEPMRA_SO_MAN",
+			"authenticationType": "Basic",
+			"userName": "S0021789894",
+			"authHeaders": {
+				"sap-client": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			},
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VARUZEQjE0QTctMTc4RS00NjZCLTg4NkYtNDFGNUNFNUNCRkZDXzM0NGQ1YmU2LWVlOTQtNGE1OC04M2ZiLWYyMzlhNmVmMjlmZSINCn0="
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
