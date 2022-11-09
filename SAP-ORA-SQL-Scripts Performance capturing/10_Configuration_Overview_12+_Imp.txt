@@ -1401,7 +1401,7 @@ FROM
         INST_ID,
         DECODE(RESOURCE_NAME, 'processes', 'Processes (Instance '||inst_id||')',
         'sessions', 'Sessions (Instance '||inst_id||')',
-         'parallel_max_servers', 'PX slaves (Instance '||inst_id||')') NAME,
+         'parallel_max_servers', 'PX (Instance '||inst_id||')') NAME,
         'current: ' || TO_CHAR(CURRENT_UTILIZATION, 9990) ||
         ', max: ' || TO_CHAR(MAX_UTILIZATION, 9990) ||
         ', limit: ' || TO_CHAR(INITIAL_ALLOCATION, 99990) VALUE,
